@@ -1,0 +1,10 @@
+diff a/Ecomerce/Ecomerce/settings.py b/Ecomerce/Ecomerce/settings.py	(rejected hunks)
+@@ -54,7 +54,7 @@
+ TEMPLATES = [
+     {
+         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+-        'DIRS': [],
++        'DIRS': ['C:/Users/cuyev/OneDrive/Escritorio/cosas mias/e-comerce/Ecomerce/Ecomerce/plantillas'],
+         'APP_DIRS': True,
+         'OPTIONS': {
+             'context_processors': [
