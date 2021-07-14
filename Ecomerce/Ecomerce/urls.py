@@ -20,11 +20,11 @@ from Ecomerce.views import plantilla
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-<<<<<<< HEAD
+
   
 
 
-=======
+
     path('',plantilla),
->>>>>>> origin/master
+
 ]
