@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Ecomerce.views import plantilla
+from Ecomerce.views import plantilla, cart, checkout, contact, product
 
 
 urlpatterns = [
@@ -26,5 +26,9 @@ urlpatterns = [
 
 
     path('',plantilla),
+    path('cart.html',cart),
+    path('checkout.html',checkout),
+    path('contact.html',contact),
+    path('product.html',product),
 
 ]
