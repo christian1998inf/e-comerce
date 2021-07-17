@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Ecomerce.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['D:\SOLANGE\ECOMERCE2\Ecomerce\Ecomerce\plantillas'],
+        'DIRS': ['C:/Users/carlo/OneDrive/Documentos/e-comerce/Ecomerce/Ecomerce/plantillas'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
