@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <title>Daily Shop | Home</title>
-    {% include "cs.html" %}
+    {% include "css.html" %}
   
   </head>
   <body> 
-  {% include "css.html" %}
+  {% include "menu.html" %}
   <!-- Start slider -->
   <section id="aa-slider">
     <div class="aa-slider-area">
@@ -863,12 +863,7 @@
         <div class="col-md-12">
           <div class="row">
             <div class="aa-popular-category-area">
-              <!-- start prduct navigation -->
-             <ul class="nav nav-tabs aa-products-tab">
-                <li class="active"><a href="#popular" data-toggle="tab">Popular</a></li>
-                <li><a href="#featured" data-toggle="tab">Featured</a></li>
-                <li><a href="#latest" data-toggle="tab">Latest</a></li>                    
-              </ul>
+             
               <!-- Tab panes -->
               <div class="tab-content">
                 <!-- Start men popular category -->
@@ -1511,24 +1506,7 @@
   </section>
   <!-- / Client Brand -->
 
-  <!-- Subscribe section -->
-  <section id="aa-subscribe">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="aa-subscribe-area">
-            <h3>Subscribe our newsletter </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, velit!</p>
-            <form action="" class="aa-subscribe-form">
-              <input type="email" name="" id="" placeholder="Enter your Email">
-              <input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- / Subscribe section -->
+  
 
   <!-- footer -->  
   <footer id="aa-footer">
@@ -1646,26 +1624,8 @@
     </div><!-- /.modal-dialog -->
   </div>    
 
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="{% static 'js/bootstrap.js' %}"></script>  
-  <!-- SmartMenus jQuery plugin -->
-  <script type="text/javascript" src="{% static 'js/jquery.smartmenus.js' %}"></script>
-  <!-- SmartMenus jQuery Bootstrap Addon -->
-  <script type="text/javascript" src="{% static 'js/jquery.smartmenus.bootstrap.js' %}"></script>  
-  <!-- To Slider JS -->
-  <script src="{% static 'js/sequence.js' %}"></script>
-  <script src="{% static 'js/sequence-theme.modern-slide-in.js' %}"></script>  
-  <!-- Product view slider -->
-  <script type="text/javascript" src="{% static 'js/jquery.simpleGallery.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/jquery.simpleLens.js' %}"></script>
-  <!-- slick slider -->
-  <script type="text/javascript" src="{% static 'js/slick.js' %}"></script>
-  <!-- Price picker slider -->
-  <script type="text/javascript" src="{% static 'js/nouislider.js' %}"></script>
-  <!-- Custom js -->
-  <script src="{% static 'js/custom.js'"></script> 
+  {% include "js.html" %}
+  
 
   </body>
 </html>

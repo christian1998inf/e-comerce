@@ -27,7 +27,7 @@ urlpatterns = [
 
     path('',plantilla),
     path('cart.html',cart),
-    path('checkout.html',checkout),
+    path('pagar',checkout),
     path('contact.html',contact),
     path('product.html',product),
 
