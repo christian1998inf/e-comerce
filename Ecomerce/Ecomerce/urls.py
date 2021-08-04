@@ -19,16 +19,12 @@ from Ecomerce.views import plantilla, cart, checkout, contact, product
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-
-  
-
-
-
+    #path('admin/', admin.site.urls),
     path('',plantilla),
     path('cart.html',cart),
     path('pagar',checkout),
     path('contact.html',contact),
     path('product.html',product),
+    path('index',plantilla),
 
 ]
