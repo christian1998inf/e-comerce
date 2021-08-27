@@ -34,42 +34,9 @@
               <div class="col-md-8">
                 <div class="checkout-left">
                   <div class="panel-group" id="accordion">
-                    <!-- Coupon section -->
-                    <div class="panel panel-default aa-checkout-coupon">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                            ¿Tiene un Cupon?
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseOne" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                          <input type="text" placeholder="codigo" class="aa-coupon-code">
-                          <input type="submit" value="Aplicar Cupon" class="aa-browse-btn">
-                        </div>
-                      </div>
-                    </div>
+                    
                     <!-- Login section -->
-                    <div class="panel panel-default aa-checkout-login">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                            Acceso del Cliente 
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseTwo" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <p>A continuacion rellene los recuadros para poder acceder.</p>
-                          <input type="text" placeholder="Usuario o Correo">
-                          <input type="password" placeholder="Contraseña">
-                          <button type="submit" class="aa-browse-btn">Acceder</button>
-                          <label for="rememberme"><input type="checkbox" id="rememberme"> Recordarme </label>
-                          <p class="aa-lost-password"><a href="#">¿Olvido su Contraseña?</a></p>
-                        </div>
-                      </div>
-                    </div>
+                   
                     <!-- Billing Details -->
                     
                     <!-- Shipping Address -->
@@ -86,12 +53,12 @@
                          <div class="row">
                             <div class="col-md-6">
                               <div class="aa-checkout-single-bill">
-                                <input type="text" placeholder="Nombre*">
+                                <input type="text" placeholder="Nombre*" id="nombre">
                               </div>                             
                             </div>
                             <div class="col-md-6">
                               <div class="aa-checkout-single-bill">
-                                <input type="text" placeholder="Apellido*">
+                                <input type="text" placeholder="Apellido*" id="apellido">
                               </div>
                             </div>
                           </div> 
@@ -105,19 +72,19 @@
                           <div class="row">
                             <div class="col-md-6">
                               <div class="aa-checkout-single-bill">
-                                <input type="email" placeholder="Correo Electronico*">
+                                <input type="email" placeholder="Correo Electronico*" id="email">
                               </div>                             
                             </div>
                             <div class="col-md-6">
                               <div class="aa-checkout-single-bill">
-                                <input type="tel" placeholder="Telefono*">
+                                <input type="tel" placeholder="Telefono*" id="telefono">
                               </div>
                             </div>
                           </div> 
                           <div class="row">
                             <div class="col-md-12">
                               <div class="aa-checkout-single-bill">
-                                <textarea cols="8" rows="3">Comentario*</textarea>
+                                <textarea cols="8" rows="3" id="comentario">Comentario*</textarea>
                               </div>                             
                             </div>                            
                           </div>   
@@ -125,13 +92,13 @@
                             <div class="col-md-12">
                               <div class="aa-checkout-single-bill">
                                 <select>
-                                  <option value="0">Seleccione su Región</option>
-                                  <option value="1">Región de Arica y Parinacota.</option>
-                                  <option value="2">Región de Tarapacá.</option>
-                                  <option value="3">Bangladesh</option>
-                                  <option value="4">Belgium</option>
-                                  <option value="5">Brazil</option>
-                                  <option value="6">Canada</option>
+                                  <option value="0">Seleccione su Distrito</option>
+                                  <option value="1">Ate.</option>
+                                  <option value="2">La Molina</option>
+                                  <option value="3">Surco</option>
+                                  <option value="4">Santa Anita</option>
+                                  <option value="5">Miraflores</option>
+                                  <option value="6">San Isidro</option>
                                   <option value="7">China</option>
                                   <option value="8">Denmark</option>
                                   <option value="9">Egypt</option>
@@ -149,25 +116,19 @@
                           <div class="row">
                             <div class="col-md-6">
                               <div class="aa-checkout-single-bill">
-                                <input type="text" placeholder="Direccion de su departamento o Casa.">
+                                <input type="text" placeholder="Direccion de su departamento o Casa." id="direccion">
                               </div>                             
                             </div>
                             <div class="col-md-6">
-                              <div class="aa-checkout-single-bill">
-                                <input type="text" placeholder="Ciudad*">
-                              </div>
+                              
                             </div>
                           </div>   
                           <div class="row">
-                            <div class="col-md-6">
-                              <div class="aa-checkout-single-bill">
-                                <input type="text" placeholder="Comuna*">
+                            
                               </div>                             
                             </div>
                             <div class="col-md-6">
-                              <div class="aa-checkout-single-bill">
-                                <input type="text" placeholder="Codigo Postal*">
-                              </div>
+                              
                             </div>
                           </div> 
                         
@@ -223,7 +184,7 @@
                   </div>
                   <h4>Metodo de Pago</h4>
                   <div class="aa-payment-method">                    
-                    <label for="cashdelivery"><input type="radio" id="cashdelivery" name="optionsRadios"> Efectivo a Deliveri </label>
+                    <label for="cashdelivery"><input type="radio" id="cashdelivery" name="optionsRadios"> Efectivo a Delivery </label>
                     <label for="paypal"><input type="radio" id="paypal" name="optionsRadios" checked> Via Paypal </label>
                     <img src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_mc_vs_dc_ae.jpg" border="0" alt="PayPal Acceptance Mark">    
                     <input type="submit" value="Realizar Pedido" class="aa-browse-btn">                
@@ -267,5 +228,32 @@
 
   {% include "js.html" %} 
     
+  <script>
+    function guardar(){
+  let nombre=$("#nombre").val();
+  let apellido=$("#apellido").val();
+  let email=$("#email").val();
+  let telefono=$("#telefono").val();
+  let comentario=$("#comentario").val();
+  let direccion=$("#direccion").val();
+  var expReg= /^[a-z0-9!#$%&'+/=?^_`{|}~-]+(?:.[a-z0-9!#$%&'+/=?^_`{|}~-]+)@(?:[a-z0-9](?:[a-z0-9-][a-z0-9])?.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+  var esvalido= expReg.test(email);
+  
+  if (esvalido==true){
+    alert("Datos guardados");
+  }
+  else{
+    alert("Escriba un correo válido");
+  }
+
+
+  if(nombre == "" || apellido == "" || telefono == "" || comentario == "" || direccion == "" ){
+    alert("Rellene todos los campos");
+  }
+  else{
+    alert("Datos completos");
+  }
+    }
+  </script>
   </body>
 </html>
