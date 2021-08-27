@@ -49,32 +49,30 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">                        
-                          <input type="text" placeholder="Your Name" class="form-control">
+                          <input type="text" placeholder="Nombre" class="form-control" id="nombre">
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">                        
-                          <input type="email" placeholder="Email" class="form-control">
+                          <input type="email" placeholder="Email" class="form-control" id="email">
                         </div>
                       </div>
                     </div>
                      <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">                        
-                          <input type="text" placeholder="Subject" class="form-control">
+                          <input type="text" placeholder="Tema" class="form-control" id="tema">
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="form-group">                        
-                          <input type="text" placeholder="Company" class="form-control">
-                        </div>
+                        
                       </div>
                     </div>                  
                      
                     <div class="form-group">                        
-                      <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                      <textarea class="form-control" rows="3" placeholder="Mensaje" id="mensaje"></textarea>
                     </div>
-                    <button class="aa-secondary-btn">Send</button>
+                    <button class="aa-secondary-btn" onclick="guardar()">Enviar</button>
                   </form>
                  </div>
                </div>
@@ -97,25 +95,7 @@
    </div>
  </section>
 
-  <!-- Subscribe section -->
-  <section id="aa-subscribe">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="aa-subscribe-area">
-            <h3>Subscribe our newsletter </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, velit!</p>
-            <form action="" class="aa-subscribe-form">
-              <input type="email" name="" id="" placeholder="Enter your Email">
-              <input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- / Subscribe section -->
-
+ 
   {% include "footer.html" %}
   <!-- Login Modal -->  
   <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -143,6 +123,35 @@
 
 
   {% include "js.html" %}
+
+  <script> 
+  function guardar(){
+  let nombre=$("#nombre").val();
+  let email=$("#email").val();
+  let tema=$("#tema").val();
+  let mensaje=$("#mensaje").val();
+  var expReg= /^[a-z0-9!#$%&'+/=?^_`{|}~-]+(?:.[a-z0-9!#$%&'+/=?^_`{|}~-]+)@(?:[a-z0-9](?:[a-z0-9-][a-z0-9])?.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+  var esvalido= expReg.test(email);
+  if (esvalido==true){
+    alert("Datos guardados");
+  }
+  else{
+    alert("Escriba un correo válido");
+  }
+
+  if(nombre == "" || tema == "" || mensaje == ""){
+    alert("Rellene todos los campos");
+  }
+  else{
+    alert("Datos completos");
+  }
+}
+
+
+
+
+
+  </script>
 
   </body>
 </html>
