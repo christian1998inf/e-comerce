@@ -31,5 +31,11 @@ class Pedidos(models.Model):
     Entregado=models.BooleanField()
     Comentario=models.CharField(max_length=300)
 
-
+class Contacto(models.Model):
+    Id_contacto=models.IntegerField()
+    Nombre=models.CharField(max_length=30)
+    Correo=models.EmailField()
+    Tema=models.CharField(max_length=30)
+    Mensaje=models.CharField(max_length=200)
     
+
