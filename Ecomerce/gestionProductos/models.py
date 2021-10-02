@@ -37,5 +37,8 @@ class Contacto(models.Model):
     Correo=models.EmailField()
     Tema=models.CharField(max_length=30)
     Mensaje=models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.Nombre
     
 
